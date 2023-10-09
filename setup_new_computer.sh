@@ -14,6 +14,8 @@ echo "-------------"
 echo "installing developer pacakges"
 echo "-------------"
 sudo apt install -y docker.io
+sudo usermod -aG docker $USER
+newgrp docker
 
 echo "-------------"
 echo "Setting up projects dir"
